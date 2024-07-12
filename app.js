@@ -26,8 +26,9 @@ tl.fromTo(
   { x: 0, opacity: 1 },
   "<50%"
 );
-tl.fromTo(".nav-link", { y: -110, opacity: 0.5 }, { y: 0, opacity: 1 }, "<50%");
+tl.fromTo(".nav-link", { y: -110, opacity: 0 }, { y: 0, opacity: 1 }, "<50%");
 tl.fromTo(".hamburger", { x: 110, opacity: 0 }, { x: 0, opacity: 1 }, "<50%");
+tl.fromTo(".contract", { y: 110, opacity: 0 }, { y: 0, opacity: 1 }, "<50%");
 
 // split text
 const introText = document.querySelector(".title-h1");

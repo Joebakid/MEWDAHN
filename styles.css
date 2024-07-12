@@ -358,8 +358,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px;
-
+  /* padding: 20px; */
   font-weight: bold;
 }
 
@@ -390,7 +389,6 @@ footer {
 
 .link-element:hover {
   text-decoration: rgb(245, 243, 243) line-through;
-  /* color: #89f7fe; */
 }
 
 /* mobile */
