@@ -372,7 +372,7 @@ footer {
 }
 
 .socials {
-  padding: 100px 100px;
+  padding: 50px 0;
   display: flex;
   flex-direction: column;
   font-size: 2rem;
@@ -487,7 +487,7 @@ footer {
   .about-p {
     word-spacing: 10px;
     /* line-height: 5; */
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .phase {
