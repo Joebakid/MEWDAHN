@@ -1,3 +1,53 @@
+// gsap animation
+
+const tl = gsap.timeline({
+  defaults: {
+    duration: 0.75,
+    ease: "Power3.easeOut",
+  },
+});
+
+tl.fromTo(
+  ".img-intro",
+  { scale: 1.3, borderRadius: "0rem" },
+  {
+    scale: 1,
+    borderRadius: "50%",
+    delay: 0.1,
+    duration: 1,
+    ease: "elastic.out(1.5, 1)",
+  },
+  "<20%"
+);
+
+tl.fromTo(
+  ".nav-branding",
+  { x: -110, opacity: 0 },
+  { x: 0, opacity: 1 },
+  "<50%"
+);
+tl.fromTo(".nav-link", { y: -110, opacity: 0.5 }, { y: 0, opacity: 1 }, "<50%");
+tl.fromTo(".hamburger", { x: 110, opacity: 0 }, { x: 0, opacity: 1 }, "<50%");
+
+// split text
+const introText = document.querySelector(".title-h1");
+letters = introText.textContent.split("");
+
+// console.log(letters);
+introText.textContent = "";
+
+letters.forEach((letter) => {
+  introText.innerHTML += '<span class="letter"> ' + letter + "</span>";
+  gsap.set(".letter", { display: "inline-block" });
+});
+gsap.fromTo(
+  ".letter",
+  { y: "-100%", opacity: 0 },
+  { y: 0, opacity: 1, delay: 2, stagger: 0.05, ease: "back.out(3)" }
+);
+
+//
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
