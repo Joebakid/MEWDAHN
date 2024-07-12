@@ -57,7 +57,6 @@ function prevSlide() {
 
 setInterval(nextSlide, 3000); // Change slide every 3 seconds
 
- 
 function showSlide(index) {
   const slides = document.querySelector(".slides");
   const totalSlides = slides.children.length;
@@ -80,3 +79,42 @@ function moveSlides(step) {
 
 // Initialize slider
 showSlide(currentSlide);
+
+/////////////// slide show
+
+document.addEventListener("DOMContentLoaded", () => {
+  const slider = document.querySelector(".sliderr");
+  const slideTrack = document.querySelector(".slide-track");
+  let isPaused = false;
+
+  slider.addEventListener("mouseover", () => {
+    isPaused = true;
+  });
+
+  slider.addEventListener("mouseout", () => {
+    isPaused = false;
+  });
+
+  const startScrolling = () => {
+    let startTime = null;
+
+    const scroll = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+      const totalWidth = slideTrack.scrollWidth / 2; // Half because slides are duplicated
+      const scrollAmount = (progress / 20) % totalWidth;
+
+      slideTrack.style.transform = `translateX(${-scrollAmount}px)`;
+
+      if (!isPaused) {
+        requestAnimationFrame(scroll);
+      } else {
+        startTime = null;
+      }
+    };
+
+    requestAnimationFrame(scroll);
+  };
+
+  startScrolling();
+});
