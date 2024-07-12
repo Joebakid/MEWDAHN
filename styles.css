@@ -179,9 +179,9 @@ section {
 /* //////////// */
 
 .contract {
-  color: rgb(107, 216, 107);
+  color: white;
   font-size: 2rem;
-  background-color: #262626;
+  /* background-color: #262626; */
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -251,6 +251,7 @@ section {
 
   .nav-branding {
     font-size: 1.3rem;
+    display: flex;
   }
 
   .hamburger {
@@ -329,6 +330,9 @@ section {
   .contract {
     color: rgb(107, 216, 107);
     font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 
   .about-p {
