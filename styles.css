@@ -144,7 +144,8 @@ section {
   /* background-color: #66a6ff; */
   padding: 10px;
   border-radius: 50%;
-  border: 1px solid rgb(146, 140, 140);
+  /* border: 1px solid rgb(146, 140, 140); */
+  border: none;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -418,7 +419,7 @@ footer {
 }
 
 /* rotate intro */
-/* @keyframes rotate {
+@keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
@@ -429,7 +430,7 @@ footer {
 
 .rotate {
   animation: rotate 5s linear infinite;
-} */
+}
 
 /* mobile */
 @media (max-width: 1024px) {
