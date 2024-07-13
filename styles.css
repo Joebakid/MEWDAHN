@@ -417,7 +417,8 @@ footer {
   text-decoration: rgb(245, 243, 243) line-through;
 }
 
-@keyframes rotate {
+/* rotate intro */
+/* @keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
@@ -428,7 +429,7 @@ footer {
 
 .rotate {
   animation: rotate 5s linear infinite;
-}
+} */
 
 /* mobile */
 @media (max-width: 1024px) {
@@ -517,10 +518,10 @@ footer {
 
   .contract {
     color: white;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
+    font-size: 17px;
+    text-align: center;
     width: 100%;
+    margin: 30px 0;
   }
 
   .about-p {
