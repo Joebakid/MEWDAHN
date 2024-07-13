@@ -47,6 +47,21 @@ gsap.fromTo(
   { y: 0, opacity: 1, delay: 2, stagger: 0.05, ease: "back.out(3)" }
 );
 
+// scroll trigger
+
+// const tlIntro = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: "footer",
+//     start: "50%",
+//     end: "100%",
+//     markers: true,
+//   },
+// });
+
+// tlIntro.fromTo(".navbar", { opacity: 1 }, { opacity: 0, duration: 1 });
+
+// console.log(tlIntro);
+
 //
 
 const hamburger = document.querySelector(".hamburger");
