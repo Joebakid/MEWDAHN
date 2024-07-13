@@ -105,6 +105,7 @@ a {
 
 .first-section {
   /* background-color: aquamarine; */
+  overflow: hidden;
 }
 
 section {
