@@ -8,8 +8,8 @@
 }
 
 body {
-  color: #444;
-  background: linear-gradient(to bottom, #89f7fe, #66a6ff, #f794a4, #fdd6bd);
+  color: #f1f0f0;
+  background: linear-gradient(to bottom, #ffd700, #000000, #ff0000);
   overflow-x: hidden;
 }
 
@@ -230,6 +230,7 @@ section {
   justify-content: center;
   gap: 10px;
   width: 100%;
+  color: #444;
 }
 
 .phase-child {
