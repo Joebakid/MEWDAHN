@@ -416,7 +416,8 @@ footer {
 }
 
 .link-element:hover {
-  text-decoration: rgb(245, 243, 243) line-through;
+  /* text-decoration: rgb(245, 243, 243) line-through; */
+  color: dodgerblue;
 }
 
 /* rotate intro */
