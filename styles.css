@@ -272,6 +272,17 @@ section {
 
 /* Roadmap */
 
+.roadmap-section {
+  background: url(img/roadmap-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .one {
   font-size: 2rem;
   font-weight: bold;
