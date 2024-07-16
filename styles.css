@@ -593,4 +593,11 @@ footer {
     cursor: pointer;
     margin-left: 5px;
   }
+
+  .title-h1 {
+    font-size: 3rem;
+    padding-top: 50px;
+
+    /* opacity: 0; */
+  }
 }
