@@ -173,3 +173,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   startScrolling();
 });
+
+// copy text
+document.addEventListener("DOMContentLoaded", (event) => {
+  const icon = document.querySelector(".icon");
+  const contractText = "F6PqnazH6oJF5MPRwnVYbsacyqq1QqvGH";
+
+  icon.addEventListener("click", () => {
+    copyToClipboard(contractText);
+    alert("Text copied to clipboard: " + contractText);
+  });
+
+  function copyToClipboard(text) {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+  }
+});

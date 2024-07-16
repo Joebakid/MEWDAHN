@@ -130,6 +130,11 @@ section {
   /* opacity: 0; */
 }
 
+.icon {
+  cursor: pointer;
+  margin-left: 30px;
+}
+
 .img-container {
   display: flex;
   justify-content: center;
@@ -555,5 +560,10 @@ footer {
 
   .join-footer {
     font-size: 2rem;
+  }
+
+  .icon {
+    cursor: pointer;
+    margin-left: 5px;
   }
 }
