@@ -111,14 +111,25 @@ a {
 
 /* section 1*/
 
-.first-section {
-  /* background-color: aquamarine; */
+/* .first-section {
+   
   overflow: hidden;
   background: url(img/intro\ bg.jpeg);
-  /* background-position: center; */
+   
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 40px;
+  padding: 300px 0;
+} */
+
+.first-section {
+  background: url(img/intro\ bg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section {
@@ -582,9 +593,4 @@ footer {
     cursor: pointer;
     margin-left: 5px;
   }
-
-  /* .first-section {
-    overflow: hidden;
-    width: 100%;
-  } */
 }
