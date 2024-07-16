@@ -386,14 +386,14 @@ body {
   z-index: 2;
 }
 
-.sliderr::before {
+/* .sliderr::before {
   background: linear-gradient(
     to right,
     rgba(255, 255, 255, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
   left: 0;
-}
+} */
 
 .sliderr::after {
   background: linear-gradient(
