@@ -19,6 +19,7 @@ body {
   color: #f1f0f0;
   background: linear-gradient(to bottom, #ffd700, #000000, #ff0000);
   overflow-x: hidden;
+  position: relative;
 }
 
 /* NAV BAR */
@@ -96,6 +97,13 @@ a {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: white;
+}
+
+.audio {
+  position: fixed;
+  bottom: 0;
+  left: 5%;
+  top: 80%;
 }
 
 /* titles */
