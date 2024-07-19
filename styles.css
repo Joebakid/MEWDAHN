@@ -637,7 +637,9 @@ footer {
     /* opacity: 0; */
   }
 
-  .roadmap {
-    /* padding: 500px 0; */
+  .item3 {
+    /* background-color: lightgreen; */
+    grid-column: span 1;
+    width: 100%;
   }
 }
