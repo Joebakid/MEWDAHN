@@ -308,13 +308,21 @@ section {
 
 .phase {
   display: grid;
+  /* grid-template-columns: 1fr 1fr 2fr; */
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   gap: 10px;
   width: 100%;
   color: #444;
+}
+
+.item3 {
+  background-color: lightgreen;
+  grid-column: span 2;
+  width: 100%;
 }
 
 .phase-child {
