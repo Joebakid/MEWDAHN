@@ -380,6 +380,7 @@ body {
 .slide-track {
   display: flex;
   animation: scroll 20s linear infinite; /* Adjust the duration as needed */
+  width: calc(250px * 20); /* Adjust for the number of slides */
 }
 
 @keyframes scroll {
@@ -388,8 +389,8 @@ body {
   }
   100% {
     transform: translateX(
-      calc(-250px * 6)
-    ); /* Adjust for the number of slides */
+      calc(-250px * 10)
+    ); /* Adjust for the number of slides before it repeats */
   }
 }
 
