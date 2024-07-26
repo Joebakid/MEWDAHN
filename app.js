@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // copy text
 document.addEventListener("DOMContentLoaded", (event) => {
   const icon = document.querySelector(".icon");
-  const contractText = "F6PqnazH6oJF5MPRwnVYbsacyqq1QqvGH";
+  const contractText = "EnvLpf73MWzgEMLKZEEKiafKN7jBgCLCW2YwDpewpump";
 
   icon.addEventListener("click", () => {
     copyToClipboard(contractText);
